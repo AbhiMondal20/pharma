@@ -31,7 +31,7 @@
     <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css" />
 
     <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
-            
+   
     <!-- Responsive datatable examples -->
     <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
         type="text/css" />
@@ -42,19 +42,11 @@
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-<style>
-    .footers {
-    bottom: 0;
-    padding: 20px calc(#{$grid-gutter-width} / 2);
-    position: absolute;
-    right: 0;
-    color: $footer-color;
-    left: $sidebar-width;
-    height: $footer-height;
-    box-shadow: $box-shadow;
-    background-color: $footer-bg;
-}
-</style>
+ <!-- toastr -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/libs/toastr/build/toastr.min.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 </head>
 <body class="sidebar-enable vertical-collpsed">
 
@@ -107,7 +99,10 @@
                                     <h5 class="font-size-16">Masters</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
-                                            <a href="med-Group">Medicine Group / SubGroup</a>
+                                            <a href="med-Group">Medicine Group</a>
+                                        </li>
+                                        <li>
+                                            <a href="med-SubGroup">Medicine SubGroup</a>
                                         </li>
                                         <li>
                                             <a href="javascript:void(0);">Medicine Master</a>

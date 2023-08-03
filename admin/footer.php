@@ -99,6 +99,31 @@
         <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
         <script src="assets/libs/admin-resources/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
         <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <script src="assets/js/pages/form-advanced.init.js"></script>
+
+        
+        <!-- toastr plugin -->
+        <!-- <script src="assets/libs/toastr/build/toastr.min.js"></script> -->
+
+        <!-- toastr init -->
+        <!-- <script src="assets/js/pages/toastr.init.js"></script> -->
+
+        <!-- Buttons examples -->
+        <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+        <script src="assets/libs/jszip/jszip.min.js"></script>
+        <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+        <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+        <script src="assets/libs/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+        <script src="assets/libs/datatables.net-select/js/dataTables.select.min.js"></script>
+
+        <!-- Datatable init js -->
+        <script src="assets/js/pages/datatables.init.js"></script>
+
 
         <!-- App js -->
         <script src="assets/js/app.js"></script>

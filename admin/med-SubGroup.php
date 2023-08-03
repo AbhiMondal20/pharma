@@ -14,11 +14,11 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Medicine Group</h4>
+                            <h4 class="mb-sm-0">Medicine Sub Group</h4>
                             <div class="page-title-right">
                                 <ol class="breadcrumb m-0">
                                     <li class="breadcrumb-item"><a href="javascript: void(0);">GROUP </a></li>
-                                    <li class="breadcrumb-item active">Medicine Group</li>
+                                    <li class="breadcrumb-item active">Medicine Sub Group</li>
                                 </ol>
                             </div>
 
@@ -47,7 +47,7 @@
                                                     $res = mysqli_query($conn, $sql);
                                                     if(mysqli_num_rows($res) > 0){
                                                         while ($row = mysqli_fetch_assoc($res)) {
-                                                            
+                                                            $id = $row['id'];
                                                             $sno = $sno + 1;
                                                             $grp_name = $row['grp_name'];
                                                             $code = $row['code'];
@@ -78,6 +78,25 @@
                         <div class="card">
                             <div class="card-body">
                                 <form action="" method="post" id="form">
+                                    <div class="mt-3">
+                                        <label class="mb-1">Select Group</label>
+                                        <select class="form-control select2">
+                                            <option>Select</option>
+                                            <?php
+                                            $sql = "SELECT * FROM med_grp ORDER BY id DESC";
+                                            $res = mysqli_query($conn, $sql);
+                                            if(mysqli_num_rows($res) > 0){
+                                                while ($row = mysqli_fetch_assoc($res)) {
+                                                    $id = $row['id'];
+                                                    $grp_name = $row['grp_name'];
+                                                    echo "<option value='$id'>$grp_name</option>"; // Corrected concatenation
+
+                                                }
+                                            }
+                                            ?>
+                                        </select>
+
+                                    </div>
                                     <div class="mt-3">
                                         <label class="mb-1">Group Name <span style="color:red;">*</span></label>
                                         <input type="text" class="form-control" maxlength="25" name="grp_name"
@@ -127,10 +146,10 @@
        if (isset($_POST['ok'])) {
            $grp_name = $_POST['grp_name'];
            $code = $_POST['code'];
-           $sql = "INSERT INTO `med_grp`(`grp_name`, `code`, `added_by`) VALUES ('$grp_name','$code','admin')";
+           $sql = "INSERT INTO `med_subgrp`(`grp_name`, `code`, `added_by`) VALUES ('$grp_name','$code','admin')";
            $res  = mysqli_query($conn, $sql);
            if ($res) {
-               showSuccessMessage("New Group has been successfully added");
+               showSuccessMessage("New Sub Group has been successfully added");
            }
        }
        ?>
