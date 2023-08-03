@@ -47,6 +47,37 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+            <!-- Toaster Message -->
+            <?php
+       function showSuccessMessage($message) {
+           echo '<script>
+               toastr["success"]("' . $message . '", "Success")
+       
+               toastr.options = {
+                   "closeButton": true,
+                   "debug": false,
+                   "newestOnTop": false,
+                   "progressBar": true,
+                   "positionClass": "toast-top-right",
+                   "preventDuplicates": false,
+                   "onclick": null,
+                   "showDuration": 300,
+                   "hideDuration": 1000,
+                   "timeOut": 5000,
+                   "extendedTimeOut": 1000,
+                   "showEasing": "swing",
+                   "hideEasing": "linear",
+                   "showMethod": "fadeIn",
+                   "hideMethod": "fadeOut"
+               };
+       
+               setTimeout(function() {
+                   window.location.href = window.location.href;
+               }, 1000);
+           </script>';
+       }
+       ?>
+       
 </head>
 <body class="sidebar-enable vertical-collpsed">
 

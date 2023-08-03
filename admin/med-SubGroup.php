@@ -35,6 +35,7 @@
                                             <thead>
                                                 <tr>
                                                     <th data-priority="1">Sr.No.</th>
+                                                    <th data-priority="3">Group Name</th>
                                                     <th data-priority="3">Item Name</th>
                                                     <th data-priority="1">Code</th>
                                                     <th data-priority="3">Action</th>
@@ -43,17 +44,22 @@
                                             <tbody>
                                                 <?php
                                                 $sno = 0;
-                                                    $sql = "SELECT * FROM med_grp ORDER BY id DESC";
+                                                    $sql = "SELECT med_subgrp.id AS id, med_subgrp.subgrp_name as subgrp_name, med_subgrp.code AS code, med_grp.grp_name AS grp_name FROM med_subgrp
+                                                    INNER JOIN med_grp ON med_grp.id = med_subgrp.grp_id
+                                                    ORDER BY med_subgrp.id DESC";
                                                     $res = mysqli_query($conn, $sql);
                                                     if(mysqli_num_rows($res) > 0){
                                                         while ($row = mysqli_fetch_assoc($res)) {
                                                             $id = $row['id'];
                                                             $sno = $sno + 1;
-                                                            $grp_name = $row['grp_name'];
+                                                            $subgrp_name = $row['subgrp_name'];
                                                             $code = $row['code'];
+
+                                                            $grp_name = $row['grp_name'];
                                                             echo '<tr>
                                                                     <td>' . $sno . '</td>
                                                                     <td>' . $grp_name . '</td>
+                                                                    <td>' . $subgrp_name . '</td>
                                                                     <td>' . $code . '</td>
                                                                     <td>
                                                                         <a href="" class="btn btn-sm btn-primary"><i class="mdi mdi-content-save-edit"></i></a>    
@@ -77,11 +83,11 @@
                     <div class="col-6">
                         <div class="card">
                             <div class="card-body">
-                                <form action="" method="post" id="form">
+                                <form action="" method="post" id="form" class="needs-validation was-validated ">
                                     <div class="mt-3">
-                                        <label class="mb-1">Select Group</label>
-                                        <select class="form-control select2">
-                                            <option>Select</option>
+                                        <label class="mb-1">Select Group <span style="color:red;">*</span></label>
+                                        <select class="form-control select2" name="grp_id" required id="validationCustom03">
+                                            <option selected="" disabled="" value="">Choose...</option>
                                             <?php
                                             $sql = "SELECT * FROM med_grp ORDER BY id DESC";
                                             $res = mysqli_query($conn, $sql);
@@ -95,18 +101,17 @@
                                             }
                                             ?>
                                         </select>
-
                                     </div>
                                     <div class="mt-3">
-                                        <label class="mb-1">Group Name <span style="color:red;">*</span></label>
-                                        <input type="text" class="form-control" maxlength="25" name="grp_name"
-                                        id="grp_name" required />
+                                        <label class="mb-1">Sub Group <span style="color:red;">*</span></label>
+                                        <input type="text" class="form-control" maxlength="25" name="subgrp_name"
+                                        id="subgrp_name" required />
                                     </div>
                                     
                                     <div class="mt-3">
                                         <label class="mb-1">Code</label>
                                         <?php
-                                            $sql = "SELECT * FROM med_grp ORDER BY code DESC LIMIT 1";
+                                            $sql = "SELECT * FROM med_subgrp ORDER BY code DESC LIMIT 1";
                                             $res = mysqli_query($conn, $sql);
                                             if(mysqli_num_rows($res) > 0){
                                                 $row = mysqli_fetch_assoc($res);
@@ -144,9 +149,10 @@
  
        <?php
        if (isset($_POST['ok'])) {
-           $grp_name = $_POST['grp_name'];
+           $grp_id = $_POST['grp_id'];
+           $subgrp_name = $_POST['subgrp_name'];
            $code = $_POST['code'];
-           $sql = "INSERT INTO `med_subgrp`(`grp_name`, `code`, `added_by`) VALUES ('$grp_name','$code','admin')";
+           $sql = "INSERT INTO `med_subgrp`(`grp_id`,`subgrp_name`, `code`, `added_by`) VALUES ('$grp_id','$subgrp_name','$code','admin')";
            $res  = mysqli_query($conn, $sql);
            if ($res) {
                showSuccessMessage("New Sub Group has been successfully added");
@@ -154,35 +160,7 @@
        }
        ?>
        
-       <?php
-       function showSuccessMessage($message) {
-           echo '<script>
-               toastr["success"]("' . $message . '", "Success")
-       
-               toastr.options = {
-                   "closeButton": true,
-                   "debug": false,
-                   "newestOnTop": false,
-                   "progressBar": true,
-                   "positionClass": "toast-top-right",
-                   "preventDuplicates": false,
-                   "onclick": null,
-                   "showDuration": 300,
-                   "hideDuration": 1000,
-                   "timeOut": 5000,
-                   "extendedTimeOut": 1000,
-                   "showEasing": "swing",
-                   "hideEasing": "linear",
-                   "showMethod": "fadeIn",
-                   "hideMethod": "fadeOut"
-               };
-       
-               setTimeout(function() {
-                   window.location.href = window.location.href;
-               }, 1000);
-           </script>';
-       }
-       ?>
+
        
     <script>
         function myFunction() {   
