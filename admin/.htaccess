@@ -1,0 +1,21 @@
+# Disable directory listing
+Options -Indexes
+
+# Set the default page
+DirectoryIndex index.php
+
+# RewriteEngine for URL rewriting
+RewriteEngine On
+
+# Rewrite rule to redirect non-www to www
+RewriteCond %{HTTP_HOST} ^example.com [NC]
+RewriteRule ^(.*)$ http://www.example.com/$1 [L,R=301]
+
+# Rewrite rule to remove .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Set custom error pages
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
