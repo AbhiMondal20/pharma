@@ -657,22 +657,7 @@
                                             <a href="javascript:void(0);">Purchase Return</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Multiple Bill Purchase Return</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Multiple Bill Purchase Return</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Multiple Bill Purchase Return</a>
-                                        </li>
-                                        <li>
                                             <a href="javascript:void(0);">Medicine Barcode Print</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Patient Wise Consumption Of Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Patient Wise Consumption Of Item</a>
                                         </li>
                                         <li>
                                             <a href="javascript:void(0);">Patient Wise Consumption Of Item</a>
@@ -721,117 +706,536 @@
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <h5 class="font-size-16">UI Components</h5>
+                                    <h5 class="font-size-16">Reports</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
-                                            <a href="javascript:void(0);">Lightbox</a>
+                                            <a href="javascript:void(0);">Opening Stock</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Range Slider</a>
+                                            <a href="javascript:void(0);">Cost Analysis</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Sweet Alert</a>
+                                            <a href="javascript:void(0);">Indent Status Report</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Rating</a>
+                                            <a href="javascript:void(0);">Dynamic Report</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Forms</a>
+                                            <a href="javascript:void(0);">Salt Wise ROL</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Tables</a>
+                                            <a href="javascript:void(0);">Bill Status Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Received Medicine Report(Against Indent)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pharmacy Advance Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Bank Wise Collection Report (Pharmacy)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Bank Wise Collection Report (Pharmacy)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Item Detail Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Dead Stock Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">ABC Analysis Chart</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Department Issue GST Report</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0);">SCM Key Parameter Indicatior</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">SCM Key Parameter Indicatior</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">VED Analysis Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">ROL Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Department Issue GSTR1Seven Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">HSN Wise Summary GST Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Department Issue HSN Wise Summary Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">PMS Indent Average Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Supplier Ledger Management Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sale collection report with GST</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0);">Patient Wise Medicine Limit Increase Log Report</a>
+                                        </li>
+                                         <li>
+                                            <a href="javascript:void(0);">PO GRN Edit Log Report</a>
+                                        </li>
+
+                                         <li>
+                                            <a href="javascript:void(0);">Patient TB Detail Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sale collection report with GST</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Patient Wise Medicine Limit Increase Log Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">PO GRN Edit Log Report</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0);">Counter Collection (Accountant)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Counter Collection (User)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pharmacy Clearance Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Age Wise Stock Report</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0);">Stock Valuation Sheet</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Medicine Projection Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">PMS Order Medicine Issue Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Supplier Payment Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Payment Mode Wise Collection Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Department Wise ROL Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Detail Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pharmacy Sale and Provisional Sale Comparison</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0);">Stock Verification Report</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Retail Invoice Return Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Retail Invoice Sale Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Patient Sale Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">PMS Return Detail Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Requisition</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">XYZ Analysis Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Price Stock Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">HSN Wise Summary Purchase GST Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Analysis Report Medicine Wise</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Item History</a>
+                                        </li>
+                                         <li>
+                                            <a href="javascript:void(0);">OPD Sales Tax report</a>
+                                        </li> <li>
+                                            <a href="javascript:void(0);">IPD Sales report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Close Counter Report</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0);">Credit Sale & Due Balance Report</a>
+                                        </li>
+                                         <li>
+                                            <a href="javascript:void(0);">Category Wise GST Summary Report</a>
+                                        </li>
+                                         <li>
+                                            <a href="javascript:void(0);">Pharmacy Bill Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Items(Batch Wise) Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">MIS Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Item Wise Monthly Sale Summary Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Daily Sales Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Turn Over Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Stock Summary Related GST Report</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0);">Substore to Substore Return</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Department Wise GST Sale Summary Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Patient TB Detail Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pharmacy Bill Settlement Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase & Sale Summary</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sale Report Category Wise</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">TAT Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">GSTR-3B Report Department Issue</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">GS_Ph_InflowOutflow_RPT</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Scrap Related</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Scrap Detail</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Cost Analysis</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Medicine(Supplier Wise)</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">PMS Out-Source Reports</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">PMS Out-Source Tracking</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Account Related</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Profit And Loss</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="font-size-16">Expiry Status</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Day Wise</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Date Wise</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Medicine Issue To SubStore</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Direct Issue</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Issue Items Indent Wise</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Direct Issue Summary</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Sub-Store Related</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Return To Main Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Consumption of Items</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Consumption of items summary</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Purchase Related</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">PO(Purchase Order)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">GRN Detail</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Return To Supplier</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Supplier/Vendor List</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Vat Return Report-(Form24A)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Vat & Tax Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Challan Detail</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Rate Contract</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Order Status Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">HSN Wise Purchase GST RPT</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Rate Contract Log Report</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Closing Stock</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Current Stock</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Current Stock Summary</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Item History Date Wise(Inventory)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Closing Stock Till Date</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Stock Transaction Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Reorder Level</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Rate Wise Stock Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Stock Transaction Report Grand Total</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pharmacy ROL Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Stock Transaction Report (Detail)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Current Stock Rack Wise</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Current Stock Summary Dept Wise</a>
                                         </li>
                                         <li>
                                             <a href="javascript:void(0);">Charts</a>
                                         </li>
-                                    </ul>
-                                </div>
 
-                                <div class="col-md-4">
-                                    <h5 class="font-size-16">Applications</h5>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">GST Related</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
-                                            <a href="javascript:void(0);">Ecommerce</a>
+                                            <a href="javascript:void(0);">GST Sale Reports</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Calendar</a>
+                                            <a href="javascript:void(0);">GST Purchase Reports</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Email</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Projects</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Tasks</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Contacts</a>
+                                            <a href="javascript:void(0);">GST-R1(B2C) Reports</a>
                                         </li>
                                     </ul>
-                                </div>
 
-                                <div class="col-md-4">
-                                    <h5 class="font-size-16">Extra Pages</h5>
-                                    <ul class="list-unstyled megamenu-list">
-                                        <li>
-                                            <a href="javascript:void(0);">Light Sidebar</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Compact Sidebar</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Horizontal layout</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Maintenance</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Coming Soon</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Timeline</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">FAQs</a>
-                                        </li>
-
-                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h5 class="font-size-16">UI Components</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
-                                            <a href="javascript:void(0);">Lightbox</a>
+                                            <a href="javascript:void(0);">GST-B2CS</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Range Slider</a>
+                                            <a href="javascript:void(0);">GST Sales Register</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Sweet Alert</a>
+                                            <a href="javascript:void(0);">Summary of Document Issued Report</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Rating</a>
+                                            <a href="javascript:void(0);">GST R1 Section-7</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Forms</a>
+                                            <a href="javascript:void(0);">Purchase GST Register</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Tables</a>
+                                            <a href="javascript:void(0);">GSTR-3B</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Date Wise Gst Sale Detail Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">HSN Wise Summery GST Report With Rate</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Tax Rate Wise Summary Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Hsn Code Wise Summary Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Item Wise Summary Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Patient Wise Summary Report</a>
                                         </li>
                                         <li>
                                             <a href="javascript:void(0);">Charts</a>
                                         </li>
                                     </ul>
-                                </div>
+                                    <hr>
+                                    <h5 class="font-size-16">Sales Related</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Sales Collection</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sale With Patient Detail</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sale With Patient Detail (User Wise)</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Patient Wise Net Profit</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Item Wise Sale</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Dr. / Presciber Wise Sale</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sale Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Receipt Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Vat Sales Register</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sales Return Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">ScheduleWise Sale Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sale Report</a>
+                                        </li>
+                                         <li>
+                                            <a href="javascript:void(0);">Due Balance</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Medicine Wise Profit/Loss</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Vat Sales Register (IPD Bill Date Basis)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Date Wise Pharmacy Summary Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sale and Return Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Gross Profit Calculation Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">OPD Service and Medicine Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">IPD Service Order Wise Report (Admitted Patient)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">IPD Service Order Wise Report (Discharge Patient)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Discharge Patient Wise Sale</a>
+                                        </li><li>
+                                            <a href="javascript:void(0);">Sales Summary Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pharmacy Salt Wise Sale Report</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Consultant Departmentwise Sale Report</a>
+                                        </li>
 
+                                    </ul>
+                                </div>
                                 <div class="col-sm-5">
                                     <div>
-                                        <img src="assets/images/megamenu-img.png" alt="megamenu-img"
+                                        <img src="assets/images/megamenu-img.jpg" alt="megamenu-img"
                                             class="img-fluid mx-auto d-block">
                                     </div>
                                 </div>
