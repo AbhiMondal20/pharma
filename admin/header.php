@@ -87,13 +87,13 @@
                     Masters
                     <i class="mdi mdi-chevron-down"></i>
                 </button>
-                <div class="dropdown-menu dropdown-megamenu">
+                <div class="dropdown-menu dropdown-megamenu" style="max-height: 400px; overflow-y: auto; ">
                     <div class="row">
                         <div class="col-sm-8">
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <h5 class="font-size-14">Masters</h5>
+                                    <h5 class="font-size-16">Masters</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
                                             <a href="javascript:void(0);">Medicine Group / SubGroup</a>
@@ -305,87 +305,294 @@
                     Activity
                     <i class="mdi mdi-chevron-down"></i>
                 </button>
-                <div class="dropdown-menu dropdown-megamenu">
+                <div class="dropdown-menu dropdown-megamenu" style="max-height: 400px; overflow-y: auto; ">
                     <div class="row">
                         <div class="col-sm-8">
-
                             <div class="row">
                                 <div class="col-md-4">
-                                    <h5 class="font-size-14">UI Components</h5>
+                                    <h5 class="font-size-16">Activity</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
-                                            <a href="javascript:void(0);">Lightbox</a>
+                                            <a href="javascript:void(0);">Due Deposit</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Range Slider</a>
+                                            <a href="javascript:void(0);">Bill Cancellation</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Sweet Alert</a>
+                                            <a href="javascript:void(0);">Return Medicines</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Rating</a>
+                                            <a href="javascript:void(0);">PatientWise Medicine Return</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Forms</a>
+                                            <a href="javascript:void(0);">Medicine Return Without Bill</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Tables</a>
+                                            <a href="javascript:void(0);">Bill Modify</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Charts</a>
+                                            <a href="javascript:void(0);">Multi Due Deposit</a>
                                         </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Payment Mode Change</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Item Correction Mrp. and Exp. Date</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Package Medicine Limit Increase</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pharmacy Clearance</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Receive Medicines Against Indent</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Medicine Return By Nursing Staff</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Counter Close</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Counter Cash Received By User</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0);">Counter Cash Received By Accountant</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="javascript:void(0);">Stock Verification</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pharmacy Multiple Due Deposit (Excel)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Prescription Order List</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Pharmacy Bill Settlement</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Payment Mode Change (Refund)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Supplier Payment</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Return Cancel</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Expiry Item Scrap</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Expiry Item Return To Central Stock</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Due Deposit Cancel</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Supplier Wise Bill Attachment</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Requisition Cancellation</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Po Cancellation</a>
+                                        </li>
+                                        
+                                       
                                     </ul>
                                 </div>
 
                                 <div class="col-md-4">
-                                    <h5 class="font-size-14">Applications</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
-                                            <a href="javascript:void(0);">Ecommerce</a>
+                                            <a href="javascript:void(0);">Receive Return Medicine</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Calendar</a>
+                                            <a href="javascript:void(0);">Receive Medicines Without Indent</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Email</a>
+                                            <a href="javascript:void(0);">Sale Return Cancellation</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Projects</a>
+                                            <a href="javascript:void(0);">Pharmacy Credit Receipt</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Tasks</a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);">Contacts</a>
+                                            <a href="javascript:void(0);">PMS Medicine List</a>
                                         </li>
                                     </ul>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <h5 class="font-size-14">Extra Pages</h5>
+                                    <hr>
+                                    <h5 class="font-size-16">Advance Related</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
-                                            <a href="javascript:void(0);">Light Sidebar</a>
+                                            <a href="javascript:void(0);">Pharmacy Interim Advance</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Compact Sidebar</a>
+                                            <a href="javascript:void(0);">Refund Against Interim Advance(Pharmacy)</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Challan</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Challan Settlement By Bill</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Horizontal layout</a>
+                                            <a href="javascript:void(0);">Challan Correction</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Maintenance</a>
+                                            <a href="javascript:void(0);">Challan Cancel</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Medicine Return</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Medicine Return Request</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Coming Soon</a>
+                                            <a href="javascript:void(0);">Medicine Return Request Approval/Decline</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Timeline</a>
+                                            <a href="javascript:void(0);">Medicine Return Request List/a>
+                                        </li>
+                                    </ul>
+                                    <h5 class="font-size-16">Department(Sub Store)</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Return Goods To Main Store</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">FAQs</a>
+                                            <a href="javascript:void(0);">Consumption</a>
                                         </li>
-
+                                        <li>
+                                            <a href="javascript:void(0);">Create Indent</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Consumption (Patient Wise)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Return Goods To Substore</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Stock Management</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Opening Balance Entry</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Scrap Reconcilization</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Opening Balance Editing</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Supplier Ledger Mgt</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Supplier Ledger Mgt Edit</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Supplier Ledger Mgt Cancellation</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="font-size-16">Medicine Issue</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Issue to Dept (Direct)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Issue To Dept (Against Indent)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Indent Approval</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Create Indent From Substore</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Indent Approval From Substore</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Issue To Dept From Substore(Against Indent)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Issue Department To Department</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">GRN</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">GRN - Entry</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">GRN-Posting</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">GRN Correction</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">GRN Entry Editing</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Purchases</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">PO Creation</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Return</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">PO Correction (Before Approval)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Multiple Bill Purchase Return(With Expiry)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">PO Approval/Decline</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Requisition Approval / Decline</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Requisition</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Rate Contract</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Return Edit</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Purchase Order Mail Send</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Auto PO Creation Against Multiple Purchase Request</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">PO Correction (After Approval)</a>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Sale</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                        <li>
+                                            <a href="javascript:void(0);">Sale From Main Pharmacy Store</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Sale From Department</a>
+                                        </li>
+                                       
                                     </ul>
                                 </div>
                             </div>
@@ -393,35 +600,104 @@
                         <div class="col-sm-4">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h5 class="font-size-14">UI Components</h5>
+                                    <ul class="list-unstyled megamenu-list">
+                                            <li>
+                                                <a href="javascript:void(0);">PMS Order List (Main Store)</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">PMS Order List (From Department)</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">PMS Order Approval (For Pharmacy)</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">PMS Outside Order</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">OPD Prescription View</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">Sale Edit from Main Pharmacy Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">Sale Edit from Department</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">Provisional Sale</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">Provisional Sale Status</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0);">OPD Prescription Medicine Order List</a>
+                                            </li>
+                                        </ul>
+                                    <hr>
+                                    <h5 class="font-size-16">Duplicate Printing</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
-                                            <a href="javascript:void(0);">Lightbox</a>
+                                            <a href="javascript:void(0);">GRN</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Range Slider</a>
+                                            <a href="javascript:void(0);">Purchase Order (PO)</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Sweet Alert</a>
+                                            <a href="javascript:void(0);">Issue To Dept (Direct)</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Rating</a>
+                                            <a href="javascript:void(0);">Issue To Dept (Indent Wise)</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Forms</a>
+                                            <a href="javascript:void(0);">Return To Central Store</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Tables</a>
+                                            <a href="javascript:void(0);">Scrap</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Charts</a>
+                                            <a href="javascript:void(0);">Purchase Return</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Multiple Bill Purchase Return</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Multiple Bill Purchase Return</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Multiple Bill Purchase Return</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Medicine Barcode Print</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Patient Wise Consumption Of Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Patient Wise Consumption Of Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Patient Wise Consumption Of Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Nursing Medicine Return</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Indent Approval</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Grn Entry</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Indent (Before Approval)</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">Department Wise Consumption</a>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <div class="col-sm-5">
                                     <div>
-                                        <img src="assets/images/megamenu-img.png" alt="megamenu-img"
+                                        <img src="assets/images/megamenu-img.jpg" alt="megamenu-img"
                                             class="img-fluid mx-auto d-block">
                                     </div>
                                 </div>
@@ -439,13 +715,13 @@
                     Reports
                     <i class="mdi mdi-chevron-down"></i>
                 </button>
-                <div class="dropdown-menu dropdown-megamenu">
+                <div class="dropdown-menu dropdown-megamenu" style="max-height: 400px; overflow-y: auto; ">
                     <div class="row">
                         <div class="col-sm-8">
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <h5 class="font-size-14">UI Components</h5>
+                                    <h5 class="font-size-16">UI Components</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
                                             <a href="javascript:void(0);">Lightbox</a>
@@ -472,7 +748,7 @@
                                 </div>
 
                                 <div class="col-md-4">
-                                    <h5 class="font-size-14">Applications</h5>
+                                    <h5 class="font-size-16">Applications</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
                                             <a href="javascript:void(0);">Ecommerce</a>
@@ -496,7 +772,7 @@
                                 </div>
 
                                 <div class="col-md-4">
-                                    <h5 class="font-size-14">Extra Pages</h5>
+                                    <h5 class="font-size-16">Extra Pages</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
                                             <a href="javascript:void(0);">Light Sidebar</a>
@@ -527,7 +803,7 @@
                         <div class="col-sm-4">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h5 class="font-size-14">UI Components</h5>
+                                    <h5 class="font-size-16">UI Components</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
                                             <a href="javascript:void(0);">Lightbox</a>
