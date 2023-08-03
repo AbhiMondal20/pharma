@@ -1052,7 +1052,7 @@ body[data-sidebar="colored"] .menu-title {
     position: absolute;
     top: 0 !important;
     left: 100%;
-    display: none;
+    /* display: none; */
   }
   .topnav .dropdown:hover > .dropdown-menu {
     display: block;
@@ -1061,7 +1061,7 @@ body[data-sidebar="colored"] .menu-title {
     display: block;
   }
   .navbar-toggle {
-    display: none;
+    /* display: none; */
   }
 }
 .arrow-down {

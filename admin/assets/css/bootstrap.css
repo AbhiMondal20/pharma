@@ -1449,6 +1449,9 @@ progress {
 .gy-md-5 {
     --bs-gutter-y: 3rem;
   }
+  .d-lg-block {
+    display:block;
+  }
 }
 @media (min-width: 992px) {
   .col-lg {

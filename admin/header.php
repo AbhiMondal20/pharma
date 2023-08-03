@@ -1,3 +1,7 @@
+<?php
+    include('../db_conn.php');
+
+?>
 <!doctype html>
 <html lang="en">
 
@@ -17,7 +21,17 @@
 
     <!-- DataTables -->
     <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- Responsive Table css -->
+    <link href="assets/libs/admin-resources/rwd-table/rwd-table.min.css" rel="stylesheet" type="text/css" />
 
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+
+    <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+            
     <!-- Responsive datatable examples -->
     <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet"
         type="text/css" />
@@ -68,9 +82,6 @@
                 </a>
             </div>
 
-            <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
-                <i class="ri-menu-2-line align-middle"></i>
-            </button>
 
             <!-- App Search-->
             <form class="app-search d-none d-lg-block">
@@ -81,7 +92,7 @@
             </form>
 
             <!-- Masters Menu -->
-            <div class="dropdown dropdown-mega d-none d-lg-block ms-2">
+            <div class="dropdown dropdown-mega d-lg-block ms-2">
                 <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown"
                     aria-haspopup="false" aria-expanded="false">
                     Masters
@@ -96,7 +107,7 @@
                                     <h5 class="font-size-16">Masters</h5>
                                     <ul class="list-unstyled megamenu-list">
                                         <li>
-                                            <a href="javascript:void(0);">Medicine Group / SubGroup</a>
+                                            <a href="med-Group">Medicine Group / SubGroup</a>
                                         </li>
                                         <li>
                                             <a href="javascript:void(0);">Medicine Master</a>
@@ -299,7 +310,7 @@
             </div>
 
             <!-- Activity -->
-            <div class="dropdown dropdown-mega d-none d-lg-block ms-2">
+            <div class="dropdown dropdown-mega d-lg-block ms-2">
                 <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown"
                     aria-haspopup="false" aria-expanded="false">
                     Activity
@@ -694,7 +705,7 @@
             </div>
 
             <!-- Reports -->
-            <div class="dropdown dropdown-mega d-none d-lg-block ms-2">
+            <div class="dropdown dropdown-mega d-lg-block ms-2">
                 <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown"
                     aria-haspopup="false" aria-expanded="false">
                     Reports
