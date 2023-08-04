@@ -45,24 +45,28 @@
                                             <tbody>
                                                 <?php
                                                 $sno = 0;
-                                                $sql = "SELECT med_subgrp.id AS id, med_subgrp.subgrp_name as subgrp_name, med_subgrp.code AS code, med_grp.grp_name AS grp_name FROM med_subgrp
-                                                    INNER JOIN med_grp ON med_grp.id = med_subgrp.grp_id
-                                                    ORDER BY med_subgrp.id DESC";
+                                                $sql = "SELECT med_master.id As id, med_master.item_name AS item_name, med_master.item_code AS item_code, med_master.hsn_code AS hsn_code, med_master.prsn AS prsn, med_master.ved AS ved, med_master.status AS status, med_master.high_risk As high_risk, med_master.point_earn AS poient_earn, med_master.inst AS inst, med_grp.grp_name As grp_name, med_subgrp.subgrp_name AS subgrp_name FROM `med_master`
+                                                INNER JOIN med_grp ON med_grp.id = med_master.grp_id
+                                                INNER JOIN med_subgrp ON med_subgrp.id = med_master.subgrp_id
+                                                ORDER BY med_subgrp.id DESC";
                                                 $res = mysqli_query($conn, $sql);
                                                 if (mysqli_num_rows($res) > 0) {
                                                     while ($row = mysqli_fetch_assoc($res)) {
                                                         $id = $row['id'];
                                                         $sno = $sno + 1;
-                                                        $subgrp_name = $row['subgrp_name'];
-                                                        $code = $row['code'];
-
+                                                        $item_name = $row['item_name'];
+                                                        $item_code = $row['item_code'];
+                                                        $hsn_code = $row['hsn_code'];
+                                                        $prsn = $row['prsn'];
+                                                        $inst = $row['inst'];
                                                         $grp_name = $row['grp_name'];
+                                                        $subgrp_name = $row['subgrp_name'];
                                                         echo '<tr>
                                                                     <td>' . $sno . '</td>
-                                                                    <td>' . $grp_name . '</td>
-                                                                    <td>' . $subgrp_name . '</td>
-                                                                    <td>' . $code . '</td>
-                                                                    <td>' . $code . '</td>
+                                                                    <td>' . $item_name . '</td>
+                                                                    <td>' . $hsn_code . '</td>
+                                                                    <td>' . $item_code . '</td>
+                                                                    <td>p</td>
                                                                     <td>
                                                                         <a href="" class="btn btn-sm btn-primary"><i class="mdi mdi-content-save-edit"></i></a>
                                                                         <a href="" class="btn btn-sm btn-danger"><i class="mdi mdi-delete"></i></a>
@@ -90,29 +94,28 @@
                                     <div class="row mb-3">
                                         <label class="col-sm-2 col-form-label">Select Group <span
                                                 style="color:red;">*</span></label>
-                                        <div class="col-sm-10">
-                                            <select class="form-select select2" name="grp_id" required aria-label="Default select example">
-                                                <option selected="" disabled="" value="">Choose...</option>
-                                                <?php
-                                                $sql = "SELECT * FROM med_grp ORDER BY id DESC";
-                                                $res = mysqli_query($conn, $sql);
-                                                if (mysqli_num_rows($res) > 0) {
-                                                    while ($row = mysqli_fetch_assoc($res)) {
-                                                        $id = $row['id'];
-                                                        $grp_name = $row['grp_name'];
-                                                        echo "<option value='$id'>$grp_name</option>"; // Corrected concatenation
-                                                
-                                                    }
-                                                }
-                                                ?>
-                                            </select>
-                                        </div>
+                                                <div class="col-sm-10">
+                                                    <select class="form-select select2" name="grp_id" required aria-label="Default select example" onchange="getsubgrp(this.value)">
+                                                        <option selected disabled value="">Choose...</option>
+                                                        <?php
+                                                        $sql = "SELECT * FROM med_grp ORDER BY id DESC";
+                                                        $res = mysqli_query($conn, $sql);
+                                                        if (mysqli_num_rows($res) > 0) {
+                                                            while ($row = mysqli_fetch_assoc($res)) {
+                                                                $id = $row['id'];
+                                                                $grp_name = $row['grp_name'];
+                                                                echo "<option value='$id'>$grp_name</option>"; // Corrected concatenation
+                                                            }
+                                                        }
+                                                        ?>
+                                                    </select>
+                                                </div>
                                     </div>
                                     <div class="row mb-3">
                                         <label class="col-sm-2 col-form-label">Select Sub Group <span
                                                 style="color:red;">*</span></label>
                                         <div class="col-sm-10">
-                                            <select class="form-select select2" name="subgrp_id" required aria-label="Default select example">
+                                            <select class="form-select select2" name="subgrp_id" id="subgrp_id" required aria-label="Default select example">
                                                 <option selected="" disabled="" value="">Choose...</option>
                                             </select>
                                         </div>
@@ -129,11 +132,11 @@
                                     <div class="row mb-3">
                                         <label class="col-sm-2 col-form-label">Code</label>
                                         <?php
-                                        $sql = "SELECT * FROM med_subgrp ORDER BY code DESC LIMIT 1";
+                                        $sql = "SELECT * FROM med_master ORDER BY item_code DESC LIMIT 1";
                                         $res = mysqli_query($conn, $sql);
                                         if (mysqli_num_rows($res) > 0) {
                                             $row = mysqli_fetch_assoc($res);
-                                            $last_id = $row["code"];
+                                            $last_id = $row["item_code"];
 
                                             if ($last_id == "") {
                                                 $code_id = "001";
@@ -174,19 +177,18 @@
                                     <div class="row mb-3">
                                         <label class="col-sm-2 col-form-label">Status</label>
                                         <div class="col-sm-10">
-                                            <input type="checkbox" id="switch7" switch="info" checked value="1" />
+                                            <input type="checkbox" id="switch7" switch="info" checked value="1" name="status" />
                                             <label class="col-sm-2 col-form-label" for="switch7" data-on-label="Active"
                                                 data-off-label="Deactive"></label>
                                         </div>
                                     </div>
                                     <div class="mb-3">
                                         <center>
-
                                             <input class="form-check-input mb-3" type="checkbox" id="formCheck1">
-                                            <label class="form-check-label" for="formCheck1" value="0" name="high_risk">
+                                            <label class="form-check-label" for="formCheck1" value="1" name="high_risk">
                                                 High Risk
                                             </label>
-                                            <input class="form-check-input" type="checkbox" id="formCheck2" value="0"
+                                            <input class="form-check-input" type="checkbox" id="formCheck2" value="1"
                                                 name="point_earn">
                                             <label class="form-check-label" for="formCheck2">
                                                 Point Earn
@@ -200,7 +202,6 @@
                                                 name="inst"></textarea>
                                         </div>
                                     </div>
-
                                     <div class="row mb-3">
                                         <center>
                                             <input type="submit" class="btn btn-info waves-effect" value="OK" name="ok">
@@ -218,20 +219,49 @@
     </div>
 
 
+<!-- load Subgroup -->
+<script>
+    // Function to get Sub Groups based on the selected Group
+    function getsubgrp(subgrp_id) {
+        $.ajax({
+            url: "load/get_subgrp.php",
+            type: "POST",
+            data: { subgrp_id: subgrp_id },
+            dataType: "json",
+            success: function(data) {
+                var subgrp_idDropdown = $("#subgrp_id");
+                subgrp_idDropdown.empty().append('<option value="">--Select Sub Group --</option>');
+                console.log(subgrp_id);
+
+                // Iterate through each sub group
+                data.forEach(function(subGroup) {
+                    subgrp_idDropdown.append('<option value="' + subGroup.id + '">' + subGroup.name + '</option>');
+                });
+            }
+        });
+    }
+</script>
+
     <?php
     if (isset($_POST['ok'])) {
+        $item_name = $_POST['item_name'];
         $grp_id = $_POST['grp_id'];
-        $subgrp_name = $_POST['subgrp_name'];
-        $code = $_POST['code'];
-        $sql = "INSERT INTO `med_subgrp`(`grp_id`,`subgrp_name`, `code`, `added_by`) VALUES ('$grp_id','$subgrp_name','$code','admin')";
+        $subgrp_id = $_POST['subgrp_id'];
+        $item_code = $_POST['item_code'];
+        $hsn_code = $_POST['hsn_code'];
+        $prsn = $_POST['[prsn'];
+        $ved = $_POST['ved'];
+        $status = $_POST['status'];
+        $high_risk = $_POST['high_risk'];
+        $point_earn = $_POST['point_earn'];
+        $inst = $_POST['inst'];        
+        $sql = "INSERT INTO `med_master`(`item_name`, `grp_id`, `subgrp_id`, `item_code`, `hsn_code`, `prsn`, `ved`, `status`, `high_risk`, `point_earn`, `inst`,`added_by`) VALUES ('$item_name','$grp_id','$subgrp_id','$item_code','$hsn_code','$prsn','$ved','$status','$high_risk','$point_earn','$inst','Admin')";
         $res = mysqli_query($conn, $sql);
         if ($res) {
-            showSuccessMessage("New Master has been successfully added");
+            showSuccessMessage("New Item has been successfully added");
         }
     }
     ?>
-
-
 
     <script>
         function myFunction() {
