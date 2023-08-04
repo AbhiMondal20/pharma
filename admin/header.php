@@ -136,10 +136,10 @@
                                             <a href="med-SubGroup">Medicine SubGroup</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Medicine Master</a>
+                                            <a href="med_master">Medicine Master</a>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0);">Medicine Details</a>
+                                            <a href="med_details">Medicine Details</a>
                                         </li>
                                         <li>
                                             <a href="javascript:void(0);">Supplier</a>
